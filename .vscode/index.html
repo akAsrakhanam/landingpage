@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laneige skincare landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href='#' class="logo"><img src="/images/logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Laneige lip Mask<br>Wakeup with baby soft lips!</h2>
+                <p>This iconic, fan-fave pout perfector is a special intensive-care mask for lips.
+                     With nourishing Berry Fruit Complex™, Murumuru seed and Shea butter, this hydrating 
+                     lip mask delivers intense moisture and antioxidants while you sleep
+                      for visibly smoother, baby-soft lips in the AM.
+                      <br>See The Results!
+                      Meet your nighttime bestie with Lip Sleeping Mask.<br>
+                      
+                      - 8-HR Hydration<br>
+                      - 135% increase in hydration immediately after use*<br>
+                      
+                      - 93.7% agree lips feel softer and look less flaky**<br>
+                      - 93.7% agree lips feel hydrated for a long period of time**<br>
+                      - 90.6% agree lips look healthier**<br>
+                      - 87.5% agree lips feel firmer**
+                    </p>
+                      
+                      <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="/images/allmasks.jpg" class="lipmask">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/images/pnkk.jpg" onclick="imgSlider('/images/pnk.jpg');changeCircleColor('rgb(229, 87, 160)')"></li>
+            <li><img src="/images/green.png" onclick="imgSlider('/images/grn.webp');changeCircleColor(' rgb(116, 199, 124)')"></li>
+            <li><img src="/images/purplee.png" onclick="imgSlider('/images/purpl.webp');changeCircleColor('rgb(151, 80, 127)')"></li>
+            <li><img src="/images/yellow.png" onclick="imgSlider('/images/yellw.jpg');changeCircleColor('rgb(255, 236, 98)')"></li>
+            
+        </ul>
+        
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.lipmask').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
